@@ -12,6 +12,8 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.MediaEntityBuilder;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.ws.base.DriverScript;
+import com.ws.pages.BooksPage;
+import com.ws.pages.ComputersPage;
 import com.ws.pages.HomePage;
 import com.ws.pages.LoginPage;
 import com.ws.utils.Helper;
@@ -22,6 +24,8 @@ public class BaseTest extends DriverScript {
 	protected static ExtentTest logger;
 	HomePage homePage;
 	LoginPage loginPage;
+	BooksPage booksPage;
+	ComputersPage computersPage;
 	
 	@BeforeSuite
 	public void setUpReport() 
@@ -37,6 +41,8 @@ public class BaseTest extends DriverScript {
 		initApplication();
 		homePage = new HomePage();
 		loginPage = new LoginPage();
+		booksPage = new BooksPage();
+		computersPage = new ComputersPage();
 	}
 	
 	@AfterMethod

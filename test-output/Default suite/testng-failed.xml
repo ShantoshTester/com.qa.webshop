@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ws.tests.TestLoginPage">
+      <class name="com.ws.tests.TestBooksPage">
         <methods>
           <include name="setUpReport"/>
-          <include name="testInvalidEmailErr"/>
+          <include name="testDisplayPerPageFilter"/>
           <include name="setUp"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- com.ws.tests.TestLoginPage -->
+      </class> <!-- com.ws.tests.TestBooksPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

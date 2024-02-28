@@ -18,6 +18,8 @@ public class HomePage extends DriverScript {
 	
 	@FindBy(linkText = "Log in") WebElement loginLink;
 	@FindBy(linkText = "Log out") WebElement logoutLink;
+	@FindBy(xpath = "(//a[contains(text(),'Books')])[1]") WebElement booksMenu;
+	@FindBy(xpath = "(//a[contains(text(),'Computers')])[1]") WebElement computersMenu;
 	
 // ****************************************** Page Initialization *******************************************//
 	
@@ -26,6 +28,14 @@ public class HomePage extends DriverScript {
 	}
 	
 // ****************************************** Page Actions/Methods ******************************************//
+	
+	public void clickComputerMenu() {
+		computersMenu.click();
+	}
+	
+	public void clickBooksMenu() {
+		booksMenu.click();
+	}
 	
 	public void clickLogout() {
 		logoutLink.click();

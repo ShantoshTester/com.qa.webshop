@@ -1,78 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+<testng-results ignored="3" total="9" passed="5" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-27T08:31:39 IST" name="Default suite" finished-at="2024-02-27T08:32:11 IST" duration-ms="32502">
+  <suite started-at="2024-02-28T08:02:50 IST" name="Suite" finished-at="2024-02-28T08:03:38 IST" duration-ms="48089">
     <groups>
     </groups>
-    <test started-at="2024-02-27T08:31:39 IST" name="Default test" finished-at="2024-02-27T08:32:11 IST" duration-ms="32502">
-      <class name="com.ws.tests.TestLoginPage">
-        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:39 IST" name="setUpReport" finished-at="2024-02-27T08:31:39 IST" duration-ms="316" status="PASS">
+    <test started-at="2024-02-28T08:02:50 IST" name="Test" finished-at="2024-02-28T08:03:38 IST" duration-ms="48089">
+      <class name="com.ws.tests.BaseTest">
+        <test-method is-config="true" signature="setUpReport()[pri:0, instance:com.ws.tests.BaseTest@1c5920df]" started-at="2024-02-28T08:02:49 IST" name="setUpReport" finished-at="2024-02-28T08:02:49 IST" duration-ms="280" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:39 IST" name="setUp" finished-at="2024-02-27T08:31:44 IST" duration-ms="5017" status="PASS">
+      </class> <!-- com.ws.tests.BaseTest -->
+      <class name="com.ws.tests.TestLoginPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:02:50 IST" name="setUp" finished-at="2024-02-28T08:02:55 IST" duration-ms="5283" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testHomePageTitle()[pri:1, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:44 IST" name="testHomePageTitle" finished-at="2024-02-27T08:31:44 IST" duration-ms="42" status="PASS">
+        <test-method signature="testHomePageTitle()[pri:1, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:02:55 IST" name="testHomePageTitle" finished-at="2024-02-28T08:02:55 IST" duration-ms="39" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testHomePageTitle -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:44 IST" name="tearDown" finished-at="2024-02-27T08:31:45 IST" duration-ms="683" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:02:55 IST" name="tearDown" finished-at="2024-02-28T08:02:56 IST" duration-ms="765" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testHomePageTitle status=SUCCESS method=TestLoginPage.testHomePageTitle()[pri:1, instance:com.ws.tests.TestLoginPage@8519cb4] output={null}]]]>
+                <![CDATA[[TestResult name=testHomePageTitle status=SUCCESS method=TestLoginPage.testHomePageTitle()[pri:1, instance:com.ws.tests.TestLoginPage@48075da3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:45 IST" name="setUp" finished-at="2024-02-27T08:31:49 IST" duration-ms="3901" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:02:56 IST" name="setUp" finished-at="2024-02-28T08:03:00 IST" duration-ms="4382" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testLoginFunction()[pri:2, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:49 IST" name="testLoginFunction" finished-at="2024-02-27T08:31:51 IST" duration-ms="2564" status="PASS">
+        <test-method signature="testLoginFunction()[pri:2, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:00 IST" name="testLoginFunction" finished-at="2024-02-28T08:03:06 IST" duration-ms="6456" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testLoginFunction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:51 IST" name="tearDown" finished-at="2024-02-27T08:31:52 IST" duration-ms="380" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:06 IST" name="tearDown" finished-at="2024-02-28T08:03:07 IST" duration-ms="338" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testLoginFunction status=SUCCESS method=TestLoginPage.testLoginFunction()[pri:2, instance:com.ws.tests.TestLoginPage@8519cb4] output={null}]]]>
+                <![CDATA[[TestResult name=testLoginFunction status=SUCCESS method=TestLoginPage.testLoginFunction()[pri:2, instance:com.ws.tests.TestLoginPage@48075da3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:52 IST" name="setUp" finished-at="2024-02-27T08:31:55 IST" duration-ms="3875" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:07 IST" name="setUp" finished-at="2024-02-28T08:03:11 IST" duration-ms="4424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testIsForgotpasswordLinkPresent()[pri:3, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:55 IST" name="testIsForgotpasswordLinkPresent" finished-at="2024-02-27T08:31:56 IST" duration-ms="590" status="PASS">
+        <test-method signature="testIsForgotpasswordLinkPresent()[pri:3, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:11 IST" name="testIsForgotpasswordLinkPresent" finished-at="2024-02-28T08:03:12 IST" duration-ms="627" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testIsForgotpasswordLinkPresent -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:56 IST" name="tearDown" finished-at="2024-02-27T08:31:56 IST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:12 IST" name="tearDown" finished-at="2024-02-28T08:03:12 IST" duration-ms="235" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testIsForgotpasswordLinkPresent status=SUCCESS method=TestLoginPage.testIsForgotpasswordLinkPresent()[pri:3, instance:com.ws.tests.TestLoginPage@8519cb4] output={null}]]]>
+                <![CDATA[[TestResult name=testIsForgotpasswordLinkPresent status=SUCCESS method=TestLoginPage.testIsForgotpasswordLinkPresent()[pri:3, instance:com.ws.tests.TestLoginPage@48075da3] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:31:56 IST" name="setUp" finished-at="2024-02-27T08:32:00 IST" duration-ms="4108" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:12 IST" name="setUp" finished-at="2024-02-28T08:03:16 IST" duration-ms="3921" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidEmailErr()[pri:4, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:32:00 IST" name="testInvalidEmailErr" finished-at="2024-02-27T08:32:11 IST" duration-ms="10582" status="FAIL">
+        <test-method signature="testInvalidEmailErr()[pri:4, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:16 IST" name="testInvalidEmailErr" finished-at="2024-02-28T08:03:27 IST" duration-ms="10588" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Please enter a valid email address.']"}
@@ -81,9 +83,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15587b0a753004514c6aab5f25279e44, findElement {value=//span[text()='Please enter a valid email address.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56044}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56044/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 15587b0a753004514c6aab5f25279e44]]>
+Command: [a6226ed3fc514a171e85de8199d3f438, findElement {value=//span[text()='Please enter a valid email address.'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61182/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6226ed3fc514a171e85de8199d3f438]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Please enter a valid email address.']"}
@@ -92,9 +94,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: '4.17.0', revision: 'e52b1be057*'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [15587b0a753004514c6aab5f25279e44, findElement {value=//span[text()='Please enter a valid email address.'], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.69 (81bc525b6a36..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56044}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56044/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 15587b0a753004514c6aab5f25279e44
+Command: [a6226ed3fc514a171e85de8199d3f438, findElement {value=//span[text()='Please enter a valid email address.'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 122.0.6261.69, chrome: {chromedriverVersion: 122.0.6261.94 (880dbf29479c..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61182}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61182/devtoo..., se:cdpVersion: 122.0.6261.69, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a6226ed3fc514a171e85de8199d3f438
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -150,11 +152,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidEmailErr -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@8519cb4]" started-at="2024-02-27T08:32:11 IST" name="tearDown" finished-at="2024-02-27T08:32:11 IST" duration-ms="404" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestLoginPage@48075da3]" started-at="2024-02-28T08:03:27 IST" name="tearDown" finished-at="2024-02-28T08:03:27 IST" duration-ms="401" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testInvalidEmailErr status=FAILURE method=TestLoginPage.testInvalidEmailErr()[pri:4, instance:com.ws.tests.TestLoginPage@8519cb4] output={null}]]]>
+                <![CDATA[[TestResult name=testInvalidEmailErr status=FAILURE method=TestLoginPage.testInvalidEmailErr()[pri:4, instance:com.ws.tests.TestLoginPage@48075da3] output={null}]]]>
               </value>
             </param>
           </params>
@@ -162,6 +164,48 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.ws.tests.TestLoginPage -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      <class name="com.ws.tests.TestComputersPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestComputersPage@7a35b0f5]" started-at="2024-02-28T08:03:33 IST" name="setUp" finished-at="2024-02-28T08:03:37 IST" duration-ms="3773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testComputerPage()[pri:0, instance:com.ws.tests.TestComputersPage@7a35b0f5]" started-at="2024-02-28T08:03:37 IST" name="testComputerPage" finished-at="2024-02-28T08:03:37 IST" duration-ms="788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testComputerPage -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestComputersPage@7a35b0f5]" started-at="2024-02-28T08:03:37 IST" name="tearDown" finished-at="2024-02-28T08:03:38 IST" duration-ms="271" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testComputerPage status=SUCCESS method=TestComputersPage.testComputerPage()[pri:0, instance:com.ws.tests.TestComputersPage@7a35b0f5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ws.tests.TestComputersPage -->
+      <class name="com.ws.tests.TestBooksPage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.ws.tests.TestBooksPage@68c9133c]" started-at="2024-02-28T08:03:27 IST" name="setUp" finished-at="2024-02-28T08:03:31 IST" duration-ms="3832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDisplayPerPageFilter()[pri:0, instance:com.ws.tests.TestBooksPage@68c9133c]" started-at="2024-02-28T08:03:31 IST" name="testDisplayPerPageFilter" finished-at="2024-02-28T08:03:32 IST" duration-ms="1606" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDisplayPerPageFilter -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ws.tests.TestBooksPage@68c9133c]" started-at="2024-02-28T08:03:32 IST" name="tearDown" finished-at="2024-02-28T08:03:33 IST" duration-ms="282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testDisplayPerPageFilter status=SUCCESS method=TestBooksPage.testDisplayPerPageFilter()[pri:0, instance:com.ws.tests.TestBooksPage@68c9133c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.ws.tests.TestBooksPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
