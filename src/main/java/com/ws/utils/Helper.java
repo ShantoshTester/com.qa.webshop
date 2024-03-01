@@ -18,7 +18,8 @@ public class Helper extends DriverScript {
 	{
 		File src = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //		String screenPath = "D:/WORKSPACE/BATCH28/FRAMEWORK/com.qa.webshop/reports/screenshots/screen.png";
-		String screenPath = System.getProperty("user.dir")+"./reports/screenshots/screen.png";
+		String screenPath = System.getProperty("user.dir")+""
+				+ "./reports/screenshots/screen_"+System.currentTimeMillis()+".png";
 		try 
 		{
 			FileHandler.copy(src, new File(screenPath));

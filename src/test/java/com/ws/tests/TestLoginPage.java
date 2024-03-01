@@ -10,6 +10,8 @@ public class TestLoginPage extends BaseTest {
 		logger = report.createTest("Validating Error Message for Invalid Email");
 		homePage.clickLogin();
 		logger.pass("clicked login link");
+		loginPage.enterEmail("username");
+		loginPage.clickLoginButton();
 		String emailErrMsg = loginPage.getInvalidEmailErrMsg();
 		System.out.println(emailErrMsg);
 		Assert.assertTrue(emailErrMsg.contains("enter a valid email address"));
@@ -27,17 +29,17 @@ public class TestLoginPage extends BaseTest {
 		logger.pass("verified homepage title successuflly");
 	}
 	
-	@Test(priority = 2)
-	public void testLoginFunction() {
+	@Test(dataProvider = "wsdata", priority = 2)
+	public void testLoginFunction(String username, String password) {
 		logger = report.createTest("Validating Login Function");
 		homePage.clickLogin();
 		logger.pass("clicked login link");
 		String loginPageTitle = loginPage.getLoginPageTitle();
 		Assert.assertTrue(loginPageTitle.contains("Login"));
 		logger.pass("verified login title successuflly");
-		loginPage.enterEmail("selauto1@test.com");
+		loginPage.enterEmail(username);
 		logger.pass("entered username");
-		loginPage.enterPassword("Pass@123");
+		loginPage.enterPassword(password);
 		logger.pass("entered password");
 		loginPage.clickLoginButton();
 		logger.pass("clicked login button");

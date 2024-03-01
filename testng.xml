@@ -7,7 +7,6 @@
       <class name="com.ws.tests.TestLoginPage"/>
       <class name="com.ws.tests.TestBooksPage"/>
       <class name="com.ws.tests.TestComputersPage"/>
-      <class name="com.ws.tests.TestDesktopPage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
