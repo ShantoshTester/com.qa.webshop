@@ -7,7 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>WebShop</name>
 	<description>Hybrid_Framework</description>
-	
+
 	<properties>
 		<java.version>11</java.version>
 		<maven.compiler.source>11</maven.compiler.source>
@@ -17,6 +17,7 @@
 		<testng.version>7.10.2</testng.version>
 		<commonio.version>2.16.1</commonio.version>
 		<extentreport.version>4.0.9</extentreport.version>
+		<mavensurefire.version>3.3.1</mavensurefire.version>
 	</properties>
 
 	<dependencies>
@@ -59,4 +60,30 @@
 
 	</dependencies>
 
+	<build>
+
+		<plugins>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>${mavensurefire.version}</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+
+		</plugins>
+
+	</build>
+
 </project>
+
+
+
+
+
+
+
