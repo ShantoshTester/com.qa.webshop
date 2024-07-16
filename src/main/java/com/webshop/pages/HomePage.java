@@ -12,6 +12,7 @@ public class HomePage extends DriverScript {
 	
 	@FindBy(linkText = "Log in") private WebElement loginLink;
 	@FindBy(linkText = "Log out") private WebElement logoutLink;
+	@FindBy(xpath = "(//a[contains(text(),'Books')])[1]") private WebElement booksMenu;
 	
 	
 // ******************************************** Page Initialization ********************************//		
@@ -21,6 +22,10 @@ public class HomePage extends DriverScript {
 	}
 	
 // ******************************************** Page Methods/Action ********************************//
+	
+	public void clickBooksMenu() {
+		booksMenu.click();
+	}
 	
 	public boolean isLogoutLinkPresent() {
 		return logoutLink.isDisplayed();

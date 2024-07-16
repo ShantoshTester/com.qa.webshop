@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class LoginPageTests extends BaseTest {
 	
 
-	@Test(priority = 1)
+	@Test(priority = 1,enabled = true)
 	public void testLoginPageTitle() {
 		logger = report.createTest("test login page title");
 		homePage.clickLoginLink();
@@ -18,7 +18,7 @@ public class LoginPageTests extends BaseTest {
 	}
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 2,enabled = true)
 	public void testWelcomeSignIn() {
 		logger = report.createTest("test welcome sign in");
 		homePage.clickLoginLink();
@@ -31,7 +31,7 @@ public class LoginPageTests extends BaseTest {
 
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3,enabled = true)
 	public void testForgotPasswordIsDisplayed() {
 		logger = report.createTest("test forgot password link is displayed");
 		homePage.clickLoginLink();
@@ -43,14 +43,14 @@ public class LoginPageTests extends BaseTest {
 		logger.pass("forgot password link is displayed");
 	}
 	
-	@Test(priority = 4)
-	public void testLoginFunction() {
+	@Test(priority = 4,dataProvider = "wsdata")
+	public void testLoginFunction(String username, String password) {
 		logger = report.createTest("test login functionality");
 		homePage.clickLoginLink();
 		logger.info("clicked on login link");
-		loginPage.enterEmailId("selauto1@test.com");
+		loginPage.enterEmailId(username);
 		logger.info("entered email id");
-		loginPage.enterPassword("Pass@123");
+		loginPage.enterPassword(password);
 		logger.info("entered password");
 		loginPage.clickLoginButton();
 		logger.info("clicked on login button");
@@ -63,7 +63,7 @@ public class LoginPageTests extends BaseTest {
 		logger.info("clicked on logout");
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 5,enabled = true)
 	public void testLoginInvalidCredientials() {
 		logger = report.createTest("test login functionality");
 		homePage.clickLoginLink();

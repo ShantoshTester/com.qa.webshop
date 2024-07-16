@@ -5,7 +5,10 @@
     <classes>
       <class name="com.webshop.tests.LoginPageTests">
         <methods>
-          <include name="testLoginFunction"/>
+          <include name="testLoginFunction" invocation-numbers="4"/>
+          <include name="setUpReport"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- com.webshop.tests.LoginPageTests -->
     </classes>
